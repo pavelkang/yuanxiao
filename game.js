@@ -3,7 +3,7 @@
     var canvas;
     var game;
     var draggingBomb;
-    var BOMB_SIZE = 50, // size of the bomb
+    var BOMB_SIZE = 30, // size of the bomb
     BOMB_LIFE = 400, // time before the bomb explodes
     ANGRY_LIFE = BOMB_LIFE / 3; // time when the angry face comes on
     DECISION_INT = 20, // frames between two decision making
@@ -366,8 +366,8 @@
     };
 
     window.onload = function() {
-        document.getElementById("screen").style.width = 768+"px";
-        document.getElementById("screen").style.height = 768+"px";
+        document.querySelector("canvas").width = window.innerWidth;
+        document.querySelector("canvas").height = window.innerHeight;
         game = new Game('screen');
         canvas.onmousedown = myDown;
         canvas.onmouseup = myUp;
