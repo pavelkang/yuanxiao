@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bombman</title>
+    <meta content="utf-8" http-equiv="encoding">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <style>
+     #end {
+       display: none
+     }
+     canvas {
+       width: 0;
+       height: 0;
+     }
+    </style><script type="text/javascript" src="game.js"></script>
+  </head>
+  <body>
+    <div id="actualGame">
+      <p id="scoreParagraph"><span>Score: </span><span id="score">0</span></p>
+      <canvas id="screen" style="border: 1px solid blue"></canvas>
+    </div>
+    <div id="end">
+      <div id="gameOverMessage" style="font-size:22px">Game Over! You got: </div>
+      <p id="finalScore"></p>
+      <a href="javascript:location.reload()" id="try">Try Again!</a>
+    </div>
+  </body>
+</html>
